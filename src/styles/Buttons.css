@@ -1,0 +1,46 @@
+.hashiraSelect {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hashiraSelect > button {
+  aspect-ratio: 1/1;
+  /* width: 200px; */
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.hashiraSelect > button:hover {
+  transform: scale(0.9);
+}
+
+.hashiraSelect > button > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-position: center -50%;
+  transform: scale(1.5);
+}
+
+/* BUTTONS */
+.obanaiBtn {
+  background: rgb(92, 96, 144);
+  background: radial-gradient(
+    circle,
+    rgba(92, 96, 144, 1) 0%,
+    rgba(55, 57, 85, 1) 100%
+  );
+}
+
+.giyuBtn {
+    background: rgb(245,120,152);
+background: radial-gradient(circle, rgba(245,120,152,1) 0%, rgba(167,81,103,1) 100%);
+}
