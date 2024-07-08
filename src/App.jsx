@@ -1,19 +1,12 @@
-// import './components/Buttons'
-import Buttons from './components/Buttons';
 import './styles/App.css'
+import HashiraSelect from './components/HashiraSelect';
 
 const App = () => {
   return (
     <>
+      <HashiraSelect />
       <main>
-        <div className="characterDescription">
-          <h1>Obanai Iguro</h1>
-          <h2>Serpent Hashira</h2>
-        </div>
-        <div className="fillerP">
-          <img src="/images/Obanai.webp" alt="" />
-        </div>
-        <Buttons />
+        <h1>MAIN SECTION</h1>
       </main>
     </>
   )
