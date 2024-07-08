@@ -9,9 +9,8 @@
   position: absolute;
   padding-right: 3.5rem;
   transition: all 300ms linear;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  border-radius: 10px;
+  background-color: #121212;
+  /* background-color: rgb(22, 22, 22); */
 }
 
 .hashImgContainer {
@@ -23,32 +22,44 @@
   object-fit: cover;
   height: 100%;
   filter: grayscale(100%);
-  transition: all 200ms linear;
 }
 
 .hashImg:hover {
   cursor: pointer;
   filter: grayscale(0%);
-  filter: saturate(2);
   /* transform: scale(0.5); */
 }
 
 .arrowButton {
   position: absolute;
-  right: -3%;
+  right: -7%;
   top: 50%;
-  width: 50px;
+  width: 70px;
   aspect-ratio: 1/1;
   border: none;
-  background-color: inherit;
   border-radius: 50%;
-  padding: 0.3rem;
+  padding: .5rem;
+  background-color: #121212;
   cursor: pointer;
   transition: transform 500ms;
 }
 
 .arrowButton > img {
   width: 100%;
+  animation: menuOp 1s linear alternate infinite; 
+  filter: invert(100%);
+
+}
+
+@keyframes menuOp {
+    0% {
+        transform: translate(0);
+        /* background-color: red; */
+    }
+    100% {
+        transform: translate(10%);
+        /* background-color: blue; */
+    }
 }
 
 .close {
@@ -57,4 +68,101 @@
 
 .menuShift {
   transform: translateX(-90%);
+}
+
+.mit {
+  background-image: url("/images/hearts.jpg");
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.mit:hover {
+  filter: grayscale(0%);
+  filter: saturate(2);
+}
+
+.giyu {
+  background-image: url("/images/waves.webp");
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.giyu:hover {
+  filter: grayscale(0%);
+  filter: saturate(2);
+}
+
+.gyomei {
+  background-image: url("/images/rocks.avif");
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.gyomei:hover {
+  filter: grayscale(0%);
+  filter: saturate(2);
+}
+
+.rengoku {
+  background-image: url("/images/fire.avif");
+  background-size: contain;
+  filter: grayscale(100%);
+}
+.rengoku:hover {
+  filter: grayscale(0%);
+  filter: saturate(2);
+}
+
+.mui {
+  background-image: url("/images/mist.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+.mui:hover {
+  filter: grayscale(0%);
+  filter: saturate(2);
+}
+
+.obanai {
+  background-image: url("/images/snake.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+.obanai:hover {
+  filter: grayscale(0%);
+  filter: saturate(2);
+}
+
+.sanemi {
+  background-image: url("/images/wind.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+.sanemi:hover {
+  filter: grayscale(0%);
+  filter: saturate(2);
+}
+
+.shinobu {
+  background-image: url("/images/butterfly.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+.shinobu:hover {
+  filter: grayscale(0%);
+  filter: saturate(2);
+}
+
+.tengen{
+  background-image: url("/images/tengen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 47%;
+  filter: grayscale(100%);
+}
+.tengen:hover {
+  filter: grayscale(0%);
+  filter: saturate(2);
 }
